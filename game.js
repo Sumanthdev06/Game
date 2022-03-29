@@ -1,4 +1,4 @@
-let c = document.getElementById("myCanvas");
+let c = document.getElementById("my-canvas");
 let ctx = c.getContext("2d");
 
 let loadImage = (src, callback) => {
@@ -7,7 +7,13 @@ let loadImage = (src, callback) => {
   img.src = src;
 };
 let imagePath = (frameNumber, animation) => {
-  return  "images/" + animation +"/" + frameNumber + ".png";
+  return (
+    "image/" +
+    animation +
+    "/" +
+    frameNumber +
+    ".png"
+  );
 };
 let frames = {
   idle: [1, 2, 3, 4, 5, 6, 7, 8],

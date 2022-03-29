@@ -8,7 +8,7 @@ let loadImage = (src, callback) => {
 };
 let imagePath = (frameNumber, animation) => {
   return (
-    "image/" +
+    "images/" +
     animation +
     "/" +
     frameNumber +
